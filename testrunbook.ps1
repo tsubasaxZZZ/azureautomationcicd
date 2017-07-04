@@ -3,6 +3,7 @@
 #$scriptPath = "C:\Users\tsunomur\OneDrive - Microsoft\work\Work Folders\200_Work\20170630_英検\azureautomationcicd\testrunbook.ps1"
 #$RGName = "tsunomur0704automation"
 #Import-AzureRMAutomationRunbook -Name $runbookName -Path $scriptPath -ResourceGroupName $RGName -AutomationAccountName $automationAccountName -Type PowerShellWorkflow 
+#Publish-AzureRmAutomationRunbook -AutomationAccountName $automationAccountName -Name $runbookName -ResourceGroupName $RGName
 
 workflow testrunbook {
     $msg = ((Get-Date).AddHours(+9)).ToString("yyyyMMdd-HHmmss") + " #Start testrunbook"
