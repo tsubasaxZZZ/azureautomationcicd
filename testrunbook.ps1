@@ -33,4 +33,8 @@ workflow testrunbook {
         }
     }
     Get-AzureRmVM
+    
+    $msg = ((Get-Date).AddHours(+9)).ToString("yyyyMMdd-HHmmss") + " #Start testrunbook"
+    Write-Output $msg
+
 }
