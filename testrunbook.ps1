@@ -13,7 +13,7 @@ workflow testrunbook {
     try
     {
         # Get the connection "AzureRunAsConnection "
-        $servicePrincipalConnection=Get-AutomationConnection -Name $connectionName         
+        $servicePrincipalConnection = Get-AutomationConnection -Name $connectionName         
 
         "Logging in to Azure..."
         Add-AzureRmAccount `
